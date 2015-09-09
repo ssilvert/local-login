@@ -1,0 +1,8 @@
+{
+    "title": "Log in to {realm}",
+    "loginMsg": "LOG IN TO <strong>{realm}</strong>",
+    "userOrEmail": "Username or email",
+    "password": "Password",
+    "login": "Log In",
+    "cancel": "Cancel"
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Se connecter a {{realm}}",
+    "loginMsg": "SE CONNECTER A <strong>{{realm}}</strong>",
+    "userOrEmail": "nom d'utilisateur ou email",
+    "password": "mot de passe",
+    "login": "se connecter",
+    "cancel": "annuler"
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" class="login-pf" ng-app="login" ng-controller="messageCtrl-translate">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title translate="title" translate-values="{realm: realm}"></title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link href="css/patternfly.css" rel="stylesheet" />
+    <link href="css/zocial.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+</head>
+
+    <body class="" >
+    <div id="kc-logo"><div id="kc-logo-wrapper"></div></div>
+    
+    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5">
+        <div class="btn btn-danger btn-lg" ng-click="setLocale('en')">English</div>
+        <div class="btn btn-warning btn-lg" ng-click="setLocale('fr')">Français</div>
+    </div>
+    
+    <div id="kc-container" class="">
+        <div id="kc-container-wrapper" class="">
+
+            <div id="kc-header" class="col-xs-12 col-sm-7 col-md-6 col-lg-5">
+                <div id="kc-header-wrapper" class="" translate="loginMsg" translate-values="{realm: realm}"></div>
+            </div>
+
+                <div id="kc-feedback-placeholder" class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+                    <div id="kc-feedback-placeholder-wrapper"></div>
+                </div>
+
+
+            <div id="kc-content" class="col-sm-12 col-md-12 col-lg-12 container">
+                <div id="kc-content-wrapper" class="row">
+                    <div id="kc-form" class="col-xs-12 col-sm-8 col-md-8 col-lg-7 login">
+                        <div id="kc-form-wrapper" class="">
+            <form id="kc-form-login" class="form-horizontal" action="" method="post">
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <label for="username" class="control-label">{{'userOrEmail' | translate}}</label>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                        <input id="username" class="form-control" name="username" value="" type="text" autofocus />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                        <label for="password" class="control-label">{{'password' | translate}}</label>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                        <input id="password" class="form-control" name="password" type="password" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div id="kc-form-options" class="col-xs-4 col-sm-5 col-md-offset-4 col-md-4 col-lg-offset-3 col-lg-5">
+                        <div class="">
+                        </div>
+                    </div>
+
+                    <div id="kc-form-buttons" class="col-xs-8 col-sm-7 col-md-4 col-lg-4 submit">
+                        
+                        <div class="">
+                            <input class="btn btn-primary btn-lg" name="login" id="kc-login" type="submit" ng-value="'login' | translate" />
+                            <input class="btn btn-default btn-lg" name="cancel" id="kc-cancel" type="submit" ng-value="'cancel' | translate"/>
+                        </div>
+                     </div>
+                </div>
+                
+            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="angular.min.js"></script>
+    <script src="angular-sanitize.js"></script>
+    <script src="angular-cookies.js"></script>
+    <script src="js-ng-translate/angular-translate.js"></script> 
+    <script src="js-ng-translate/angular-translate-storage-cookie.js"></script>
+    <script src="js-ng-translate/angular-translate-storage-local.js"></script>
+    <script src="js-ng-translate/angular-translate-loader-partial.js"></script>
+    <script src="login-module-ng-translate.js"></script>
+</body>
+</html>
+
